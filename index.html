@@ -134,18 +134,43 @@
           </div>
           <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
             <div class="mb-4">
-              <h3>Project Title</h3>
+              <h3>Comp305 Car Dealership Co.</h3>
+               <h5>Motivation</h5>
               <p>
-               Motivation of the project
+              The motivation behind our project stems from a school assignment, which offered an opportunity to delve deeper into Object-Oriented Programming (OOP) principles and apply them to create practical software solutions.
+                We decided to emulate the Model-View-Controller (MVC) design pattern, leveraging prior group experience, to build the project from scratch and enhance our understanding of this widely used architectural framework. 
+                By developing a car dealership system, we aimed to create an application that could be utulized by businesses today.
+              </p>
+              <h5>Functional Requirements</h5>
+              <p>
+              Our project is a comprehensive simulation of a car dealership system, designed to help businesses or individuals manage vehicle transactions effectively. 
+                Each day, the dealership begins by printing a list of available cars—a routine task seamlessly integrated into our program. 
+                The backend system uses CSV files to load an initial inventory of vehicles, creating vehicle objects to populate the repository. 
+                The system monitors each vehicle's availability status, ensuring accurate and efficient management.
               </p>
               <p>
-              Functional requirements/what the project does
+                The program features two modes: guest and admin. In guest mode, users can browse available cars, apply filters, or search for specific vehicles by license plate. 
+                 Users can view detailed information about each vehicle, make decisions, and confirm purchases through a straightforward, intuitive interface. 
+                In admin mode, admins can access details on all cars, track sales status, and view daily revenue, facilitating informed management decisions and efficient operation of the dealership.
+              </p>
+            <h5>Project Design</h5>
+            <p>
+              The design of our project is built around the MVC design pattern, chosen for its clear separation of concerns, which aligns well with our educational goals. 
+              We wrote the program in Python, allowing for Python's wide range of libraries. We implemented a functional graphical user interface (GUI) using PySimpleGUI, which simplified the development process.
               </p>
               <p>
-              Project design
-              </p>
-              <p>
-              Implementation
+                We also integrated the state design pattern to manage the application's flow, enhancing our project's structure and scalability. 
+                This pattern helped us organize our code better and facilitated smooth transitions between different states of the application, such as switching from guest to admin mode.
+              /p>
+              <h5>Implementation</h5>
+                <p>
+                I was responsible for the business logic in the program that allowed for data analytics of the days transactions. A user would be authenticated with uisername and password then granted access to the interface chosen.
+                  Whenever a car was sold which was a functionality only available in the guest state; the revenue was agregated and displayed by the Admin interface.
+                  Having a quick and digestible view of the day's transaction assists the user in future projections and allow for a quick insight into the day's success. 
+                  When a vehicle was sold the avaibility flag for that vehicle was toggled and updated in the car repository. 
+                  This sufficienlty transformed the car repository into a psuedo ledger that tracked what cars had been sold that day.
+                  This car repository would be initally created from a csv file that would be first validated to prevent errors on program start up. 
+                  Handling of authorization and authentication is an important part of many softwares today so we knew we wanted this implemenation in our program as well.
               </p>
 
 
@@ -177,19 +202,10 @@
           <div class="col-md-12 text-center">
             <p class="mb-0">
               <span class="icon-mail_outline d-block h4 text-primary"></span>
-              <span>email address</span>
+              <span>sebastianfernandez@sandiego.edu</span>
             </p>
           </div>
-          
-          <div class="col-md-12 text-center">
-            <p class="mb-0">
-              <span class="icon-graduation-cap d-block h4 text-primary"></span>
-              <a href="">Resume</a>
-            </p>
-          </div>
-        </div>
-
-      </div>
+ </div>
     </section>
 
 
